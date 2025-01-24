@@ -1,0 +1,273 @@
+:root {
+    --gray-100: #0d0e11;
+    --gray-200: #16181d;
+    --gray-300: #292c34;
+    --gray-400: #878ea1;
+    --gray-500: #c0c4ce;
+    --gray-600: #e2e4e9;
+    --red: #e3646e;
+    --purple: #bb72e9;
+    --blue: #3996db;
+    --green: #82bc4f;
+    --yellow: #eabd5f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+#pfp {
+    height: 120px;
+    width: 120px;
+    background-image: url(assets/pfp.avif);
+    background-size: cover;
+    border-radius: 60px;
+}
+
+#home {
+    font-family: Asap;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: url(assets/bg1.png);
+    background-size: cover;
+    color: var(--gray-500);
+
+    h1 {
+        font-size: 36px;
+        color: var(--gray-600);
+    }
+
+    light {
+        color: var(--gray-400)
+    }
+}
+
+#code {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+        background-color: var(--gray-300);
+        border-radius: 999px;
+        padding: 10px;
+        display: flex;
+        gap: 5px;
+        
+    }
+
+    .icon {
+        width: 19px;
+        height: 19px;
+    }
+}
+.button:hover {
+    scale:1.05;
+    transition: 100ms;
+}
+
+span {
+    font-family: Inconsolata;
+}
+
+red {
+    color: var(--red);
+    font-family: Inconsolata;
+}
+
+#seta {
+    filter: invert();
+    position: absolute;
+    bottom: 10px;
+}
+#seta:hover {
+    scale: 1.10;
+    transition: 300ms;
+}
+#works {
+    height: 100vh;
+    width: 100vw;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Inconsolata;
+    background-color: var(--gray-200);
+    color: var(--gray-600);
+}
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+    .projects {
+        display: flex;
+        width: 330px;
+        height: 280px;
+        background-color: var(--gray-100);
+        flex-wrap: wrap;
+        justify-content: left;
+        border-radius: 10px;
+        flex-direction: column;
+        padding-left: 15px;
+        gap: 10px;
+        padding-right: 15px;
+        border: 1px solid var(--gray-100);
+        .pro_pic {
+            width: 306px;
+            height: 156px;
+            background-color: #3996db;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+            background-size: cover;
+        }
+    }
+}
+.projects:hover {
+    border: 1px solid var(--gray-400);
+    transition: 500ms;
+}
+
+#img1 {
+    background-image: url(assets/Thumbnail_Project-01.png);
+}
+#img2 {
+    background-image: url(assets/Thumbnail_Project-02.png);
+}
+#img3 {
+    background-image: url(assets/Thumbnail_Project-03.png);
+}
+#img4 {
+    background-image: url(assets/Thumbnail_Project-04.png);
+}
+h2 {
+    font-family: Asap;
+    color: var(--gray-600);
+    padding-bottom: 30px;
+}
+p_title {
+    font-weight: bold;
+    font-family: Asap;
+}
+#AllServices {
+    width: 100vw;
+    height: 60vh;
+    background-color: var(--gray-100);
+    color: var(--gray-600);
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    
+}
+#myServices {
+    gap: 10px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .serTitle {
+        font-family: Asap;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--gray-600);
+    }
+    .serDes {
+        font-family: Maven Pro;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: var(--gray-500);
+    }
+}
+.service {
+    border: 3px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    height: 155px;
+}
+.service:hover {
+    border: 3px solid var(--gray-400);
+    transition: 200ms;
+}
+#contact {
+    background-image: url(assets/bg2.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.link {
+    width: 400px;
+    height: 68px;
+    display: flex;
+    background-color: var(--gray-300);
+    color: var(--gray-500);
+    font-family: Maven Pro;
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 15px;
+    gap: 10px;
+    border: 1px solid var(--gray-200);
+    position: relative;
+    
+    .arrow {
+       position: absolute;
+       right: 15px;
+    }
+}
+.link:hover {
+    border: 1px solid var(--blue);
+    transition: 400ms;
+}
+#links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+purple {
+    color: var(--purple);
+    font-family: Inconsolata;
+    font-size: 20px;
+}
+light {
+    font-family: Maven Pro;
+    color: var(--gray-500);
+    font-size: 16px;
+}
+#head {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
