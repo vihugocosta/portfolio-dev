@@ -11,7 +11,9 @@
     --green: #82bc4f;
     --yellow: #eabd5f;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     padding: 0;
     margin: 0;
@@ -25,9 +27,16 @@ body {
 #pfp {
     height: 120px;
     width: 120px;
-    background-image: url(assets/pfp.avif);
+    background-image: url(assets/pfp.png);
     background-size: cover;
     border-radius: 60px;
+    border:4px solid var(--red);
+    position: relative;
+    img {
+        position: absolute;
+        top: 90px;
+        left: 90px;
+    }
 }
 
 #home {
@@ -101,15 +110,25 @@ red {
 #works {
     height: 100vh;
     width: 100vw;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding-top: 30px;
     font-family: Inconsolata;
     background-color: var(--gray-200);
     color: var(--gray-600);
+}
+@media screen and (max-width:800px) {
+    #works{
+        display: flexbox;
+        padding-top: 680px;
+        padding-bottom: 650px;
+    }
+    .work{
+        display: flexbox;
+    }
 }
 .work {
     display: flex;
@@ -168,16 +187,16 @@ p_title {
     font-family: Asap;
 }
 #AllServices {
-    width: 100vw;
-    height: 60vh;
+    
     background-color: var(--gray-100);
     color: var(--gray-600);
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 50px;
+    gap: 10px;
     
 }
 #myServices {
@@ -207,6 +226,7 @@ p_title {
     padding: 20px;
     width: 280px;
     height: 155px;
+    text-align: left;
 }
 .service:hover {
     border: 3px solid var(--gray-400);
@@ -270,4 +290,6 @@ light {
     align-items: center;
     flex-direction: column;
     padding-bottom: 10px;
+    margin-top: 100px;
+    gap:10px;
 }
