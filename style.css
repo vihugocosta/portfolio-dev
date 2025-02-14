@@ -41,7 +41,6 @@ body {
 
 #home {
     font-family: Asap;
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -109,7 +108,6 @@ red {
 }
 #works {
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +195,6 @@ p_title {
     text-align: center;
     padding: 50px;
     gap: 10px;
-    
 }
 #myServices {
     gap: 10px;
@@ -235,7 +232,6 @@ p_title {
 #contact {
     background-image: url(assets/bg2.png);
     background-size: cover;
-    width: 100vw;
     height: 100vh;
     display: flexbox;
     align-items: center;
